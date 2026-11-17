@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Art Generator (SwiftUI)</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 2.5rem; margin-bottom: 12px; }
+    p.subtitle { color: #94a3b8; font-size: 1.15rem; line-height: 1.6; }
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 28px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 12px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 48px;
+      text-align: left;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 16px;
+      border: 1px solid #334155;
+    }
+    .card h3 { margin-top: 0; color: #60a5fa; }
+    .card p { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Art Generator</h1>
+    <p class="subtitle">
+      A native SwiftUI iOS &amp; iPadOS app powered by Pollinations.ai. Create custom artwork with style presets, resolution controls, seed locking, and a built-in pull-out QWERTY keyboard.
+    </p>
+    <a class="btn" href="https://github.com">View Source on GitHub</a>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Art Style Presets</h3>
+        <p>Switch between Hyper Realistic, Anime, Cyberpunk, Watercolor, Oil Painting, and more.</p>
+      </div>
+      <div class="card">
+        <h3>Full Generation Control</h3>
+        <p>Customize aspect ratios (1:1, 3:4, 4:3), resolution up to 1024px, negative prompts, and seed locks.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Pull-Out Keyboard</h3>
+        <p>Built-in on-screen QWERTY keyboard with symbols, paste button, and quick field switching.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
