@@ -590,6 +590,14 @@
       a.download = `ai-art-${currentSeed}.png`;
       a.click();
     };
+        const invertBtn = document.getElementById("invertBtn");
+    if (localStorage.getItem("invertContrast") === "true") {
+      document.documentElement.classList.add("inverted");
+    }
+    invertBtn.onclick = () => {
+      const isInverted = document.documentElement.classList.toggle("inverted");
+      localStorage.setItem("invertContrast", isInverted);
+    };
   </script>
 </body>
 </html>
